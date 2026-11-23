@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC ZONE | Computer Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            PC<span>ZONE</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="cart-btn" id="open-cart">
+                🛒 Cart (<span id="cart-count">0</span>)
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">WELCOME TO PC ZONE</span>
+
+            <h1>
+                Upgrade Your
+                <span>Gaming Experience</span>
+            </h1>
+
+            <p>
+                Discover the latest computers,
+                gaming hardware and accessories
+                at the best prices.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#products" class="primary-btn">Shop Now</a>
+                <a href="#categories" class="secondary-btn">Explore More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+
+        <div class="section-header">
+            <span>OUR COLLECTION</span>
+            <h2>Featured Products</h2>
+            <p>Discover our best computer hardware and gaming gear.</p>
+        </div>
+
+        <div class="products-container">
+
+            <div class="product-card">
+                <div class="product-image"><span>🖥️</span></div>
+                <div class="product-info">
+                    <span class="category">Gaming PC</span>
+                    <h3>Gaming Desktop PC</h3>
+                    <p>High performance gaming computer.</p>
+                    <div class="product-bottom">
+                        <strong>45,000 EGP</strong>
+                        <button class="add-cart"
+                            data-id="1"
+                            data-name="Gaming Desktop PC"
+                            data-price="45000">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><span>💻</span></div>
+                <div class="product-info">
+                    <span class="category">Laptop</span>
+                    <h3>Gaming Laptop</h3>
+                    <p>Powerful laptop for gaming and work.</p>
+                    <div class="product-bottom">
+                        <strong>38,000 EGP</strong>
+                        <button class="add-cart"
+                            data-id="2"
+                            data-name="Gaming Laptop"
+                            data-price="38000">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><span>🎮</span></div>
+                <div class="product-info">
+                    <span class="category">Accessories</span>
+                    <h3>Gaming Accessories</h3>
+                    <p>Upgrade your gaming setup.</p>
+                    <div class="product-bottom">
+                        <strong>3,500 EGP</strong>
+                        <button class="add-cart"
+                            data-id="3"
+                            data-name="Gaming Accessories"
+                            data-price="3500">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <section class="shopping-cart" id="shopping-cart">
+        <div class="section-header">
+            <span>YOUR ORDER</span>
+            <h2>Shopping Cart 🛒</h2>
+        </div>
+
+        <div id="cart-items">
+            <p>Your cart is empty.</p>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Total: <span id="cart-total">0</span> EGP</h3>
+            <button id="clear-cart">Clear Cart</button>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact">
+        <p>© 2026 PC ZONE. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
